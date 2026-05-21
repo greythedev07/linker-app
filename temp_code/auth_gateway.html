@@ -1,0 +1,149 @@
+<!DOCTYPE html><html class="light" lang="en" style=""><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0, viewport-fit=cover" name="viewport">
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Metropolis:wght@600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "secondary-container": "#dfdfe1",
+                        "on-surface": "#1b1b1b",
+                        "inverse-on-surface": "#f1f1f1",
+                        "me-bubble": "#007AFF",
+                        "on-tertiary": "#ffffff",
+                        "surface-container": "#eeeeee",
+                        "on-primary-fixed": "#001a41",
+                        "inverse-primary": "#adc6ff",
+                        "secondary": "#5d5e60",
+                        "tertiary-container": "#00818f",
+                        "surface": "#f9f9f9",
+                        "tertiary-fixed": "#9af0ff",
+                        "on-tertiary-fixed-variant": "#004f58",
+                        "tertiary": "#006672",
+                        "primary-fixed": "#d8e2ff",
+                        "on-primary-fixed-variant": "#004493",
+                        "surface-container-highest": "#e2e2e2",
+                        "on-tertiary-fixed": "#001f24",
+                        "background": "#f9f9f9",
+                        "surface-tint": "#005bc1",
+                        "surface-dim": "#dadada",
+                        "surface-container-high": "#e8e8e8",
+                        "on-primary-container": "#fefcff",
+                        "surface-container-low": "#f3f3f3",
+                        "partner-bubble": "#E9E9EB",
+                        "outline": "#717786",
+                        "secondary-fixed": "#e2e2e4",
+                        "surface-bright": "#f9f9f9",
+                        "secondary-fixed-dim": "#c6c6c8",
+                        "tertiary-fixed-dim": "#46d8ee",
+                        "on-secondary": "#ffffff",
+                        "glass-blur": "rgba(255, 255, 255, 0.7)",
+                        "on-surface-variant": "#414755",
+                        "on-secondary-fixed-variant": "#454749",
+                        "on-secondary-container": "#616365",
+                        "sky-gradient-start": "#2AC7DC",
+                        "sky-gradient-end": "#007AFF",
+                        "outline-variant": "#c1c6d7",
+                        "system-background": "#FFFFFF",
+                        "inverse-surface": "#303030",
+                        "on-primary": "#ffffff",
+                        "error": "#ba1a1a",
+                        "on-background": "#1b1b1b",
+                        "primary-container": "#0070eb",
+                        "error-container": "#ffdad6",
+                        "primary-fixed-dim": "#adc6ff",
+                        "on-secondary-fixed": "#1a1c1d",
+                        "surface-variant": "#e2e2e2",
+                        "on-error-container": "#93000a",
+                        "primary": "#0058bc",
+                        "partner-text": "#1C1C1E",
+                        "on-error": "#ffffff",
+                        "on-tertiary-container": "#f7feff"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "bubble-gap-different": "12px",
+                        "input-min-height": "44px",
+                        "unit": "4px",
+                        "header-height": "88px",
+                        "bubble-gap-same": "2px",
+                        "margin-edge": "16px"
+                    },
+                    "fontFamily": {
+                        "body-lg": ["Inter", "sans-serif"],
+                        "headline-md": ["Metropolis", "sans-serif"],
+                        "label-caps": ["Inter", "sans-serif"],
+                        "body-sm": ["Inter", "sans-serif"],
+                        "display-lg": ["Metropolis", "sans-serif"],
+                        "status-text": ["Inter", "sans-serif"]
+                    },
+                    "fontSize": {
+                        "body-lg": ["17px", {"lineHeight": "22px", "letterSpacing": "-0.01em", "fontWeight": "400"}],
+                        "headline-md": ["22px", {"lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                        "label-caps": ["12px", {"lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                        "body-sm": ["15px", {"lineHeight": "20px", "fontWeight": "400"}],
+                        "display-lg": ["34px", {"lineHeight": "41px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "status-text": ["11px", {"lineHeight": "13px", "fontWeight": "500"}]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            background-color: #FFFFFF;
+            -webkit-font-smoothing: antialiased;
+        }
+        .ios-shadow {
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body-lg" style="background-color: rgb(249, 249, 249);">
+<!-- Auth Gateway Canvas -->
+<main class="min-h-screen flex flex-col items-center justify-center px-margin-edge space-y-12 max-w-[600px] mx-auto py-12 pt-[env(safe-area-inset-top)] pb-[env(safe-area-inset-bottom)]">
+<!-- Top Section: Logo and Identity -->
+<div class="flex flex-col items-center w-full">
+<img alt="Linker Logo" class="w-[120px] h-auto mx-auto shadow-md" src="https://lh3.googleusercontent.com/aida/ADBb0ui4MmNzW_VkLsmE0ZB3d4mXPCJu7lOhXJT_HSQbuSHg6PpB6Hecno5ni8xYV-kbr0xEc9DNV4fqwl9l5ne4xCXcvBqhjuL2kY1808KVKZjISlpUUl6cJXGrE82yI7FdEHklbHy0Sy2JF9AmvAxGH8POemaUjnAmSD3PcYa_GlDt4uamodwz7ZBR3fprYUAnsdbiYg7Tkx5cy9tCcxUIVzZJQrVqD6HtuEvqBaIj2AhrhkVaa_z0UsmMMpL5SLD77TQaPqvackZo">
+</div>
+<!-- Middle Section: Input Form -->
+<div class="w-full space-y-12">
+<div class="text-center">
+<p class="font-body-sm text-body-sm text-on-surface-variant">Enter your phone number to continue</p>
+</div>
+<!-- Phone Number Input -->
+<div class="relative group">
+<label class="font-label-caps text-label-caps text-on-surface-variant mb-2 block ml-1">Phone Number</label>
+<div class="relative">
+<span class="absolute left-4 top-1/2 -translate-y-1/2 material-symbols-outlined text-outline">call</span>
+<input class="w-full h-input-min-height pl-12 pr-4 bg-transparent border border-outline-variant rounded-xl font-body-lg text-body-lg focus:ring-2 focus:ring-primary transition-all placeholder:text-outline-variant" placeholder="+1 (555) 000-0000" type="tel">
+</div>
+</div>
+</div>
+<!-- Bottom Section: Actions -->
+<div class="w-full space-y-4">
+<button class="w-full bg-primary hover:bg-primary-container active:scale-[0.98] transition-all py-4 rounded-xl shadow-lg shadow-primary/20">
+<span class="font-headline-md text-headline-md text-on-primary">Continue</span>
+</button>
+<div class="text-center">
+<a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" href="#">
+                New to Linker? <span class="underline decoration-outline-variant/30 font-medium">Create an account</span>
+</a>
+</div>
+</div>
+</main>
+
+
+</body></html>
